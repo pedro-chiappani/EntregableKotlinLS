@@ -1,3 +1,5 @@
+package packageLPT
+
 import robocode.JuniorRobot
 
 class LPT : JuniorRobot() {

@@ -1,6 +1,7 @@
 package packageLPT
 
 import java.awt.Color
+import robocode.JuniorRobot
 
 object Defensivo : Strategist {
     private val corredora = EstrategiaCorredora()
@@ -51,11 +52,11 @@ object Defensivo : Strategist {
             val bearing = robot.scannedBearing
 
             if(distance > 200) {
-                robot.fire(1)
+                robot.fire(1.toDouble())
             } else if (distance > 50) {
-                robot.fire(2)
+                robot.fire(2.toDouble())
             } else {
-                robot.fire(3)
+                robot.fire(3.toDouble())
             }
 
             robot.turnRight(bearing)

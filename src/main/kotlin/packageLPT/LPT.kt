@@ -3,7 +3,8 @@ package packageLPT
 import robocode.JuniorRobot
 
 class LPT : JuniorRobot() {
-    private var estratega: Strategist
+    //private var estratega: Strategist = Defensivo
+    private var estratega: Strategist = Estratega2
 
     override fun run(){
         estratega.returnStrategyRun(this).run(this)
